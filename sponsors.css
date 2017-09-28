@@ -1,0 +1,24 @@
+body, html {
+    height: 100%;
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+#thankyou{  
+    background: url('thank_you.jpg') no-repeat;
+    height: 100%; 
+    background-size: 100%;
+    background-position: center;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 2.2em;
+	
+}
+#logos img{
+	width: 400;
+}
+#thankyou p{
+	color: azure;
+	
+}   
+  
