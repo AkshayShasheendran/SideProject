@@ -53,6 +53,7 @@ body, html {
       border-radius: 0;
       height:auto;
       font-family: Montserrat, sans-serif;
+	  position:fixed;
       
   }
   .navbar li a, .navbar .navbar-brand {
@@ -87,12 +88,27 @@ body, html {
         width: 100%;
         margin-bottom: 35px;
     }
+	
   }
   @media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;
     }
+	
   }  
+  @media screen and (min-width: 0px) and (max-width: 400px) {/* show it on small screens */
+  .mobile-only { display: none; }  
+  .desktop-only { display: block;
+		
+	}  
+}
+
+  @media screen and (min-width: 401px){/* show it on big screens */
+  .desktop-only { display: none;
+	
+  }   
+ .mobile-only { display: block; }  
+}
   .btn-circle {
   width: 50px;
   height: 50px;
@@ -113,16 +129,7 @@ body, html {
 #social ul{
   list-style: none;
 }
-@media screen and (max-width: 800px)
-{
-  .icon
-  {
-    width: 40px !important;
-    height: 40px !important;
-    font-size: 20px !important;
-    line-height: 45px !important;
-  }
-}
+
 . icon ul{
   text-align: center; 
 }
@@ -134,9 +141,12 @@ body, html {
   color: #00264d;  
   text-align: center;   
   padding-bottom: 0px;
+
+
 }
 .icon:hover {  
   color: #fff;
 }
+
 
   </style>
