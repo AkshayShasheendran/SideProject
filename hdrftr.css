@@ -97,7 +97,7 @@ body, html {
     }
 	
   }  
-  @media screen and (min-width: 0px) and (max-width: 450px) {/* show it on small screens */
+  @media screen and (min-width: 200px) and (max-width: 550px) {/* show it on small screens */
   .desktop-only { display: none; } 
   
 	body{margin-top:72px;}  
@@ -105,7 +105,7 @@ body, html {
 
 
 
-  @media screen and (min-width: 451px){/* show it on big screens */   
+  @media screen and (min-width: 551px){/* show it on big screens */   
  .mobile-only { display: none; }  
 }
   .btn-circle {
