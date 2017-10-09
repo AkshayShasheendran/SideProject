@@ -140,5 +140,10 @@
         padding: 0;
     }   
 }
+@media(max-width:400px){
+	#logoname{
+		display:none;
+	}
+}
 
   </style>

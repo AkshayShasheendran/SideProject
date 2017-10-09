@@ -37,6 +37,7 @@ body, html {
   margin-bottom: 1px;
   margin-right: 1px;
   margin-top: 1px;
+
 }
 .navbar-toggle {
   padding: 8px;
@@ -63,6 +64,7 @@ body, html {
   .navbar-nav li a:hover, .navbar-nav .active a, .navbar-nav .active{
       color: #00264d !important;
       background-color: #fff !important;
+	   text-decoration:none;
       
   }
   .navbar-default .navbar-toggle {
@@ -75,8 +77,7 @@ body, html {
       font-size: 20px;
       height:auto;
       color: #00264d;
-      font-size: 15px !important;      
-      height:auto;
+      font-size: 15px !important;            
       font-family: Montserrat, sans-serif;
   }  
   @media screen and (max-width: 768px) {
@@ -97,17 +98,15 @@ body, html {
 	
   }  
   @media screen and (min-width: 0px) and (max-width: 400px) {/* show it on small screens */
-  .mobile-only { display: none; }  
-  .desktop-only { display: block;
-		
+  .desktop-only { display: none; } 
+  
+	body{margin-top:72px;}  
 	}  
-}
 
-  @media screen and (min-width: 401px){/* show it on big screens */
-  .desktop-only { display: none;
-	
-  }   
- .mobile-only { display: block; }  
+
+
+  @media screen and (min-width: 401px){/* show it on big screens */   
+ .mobile-only { display: none; }  
 }
   .btn-circle {
   width: 50px;
