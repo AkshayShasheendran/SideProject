@@ -170,9 +170,29 @@ a:active {
 background-color: #00152b;
 }
 
-.container li {
+.containerl li {
   list-style-type: none;
-  
+  position: relative;
+  padding-left: 10px;
+}
+.containerl li:before {
+  border-radius: 100%;
+  position: absolute;
+  background: #000;
+  /*content: '';*/
+  height: 5px;
+  width: 5px;
+  top: 6px;
+  left: 0;
+}
+.containerl li:nth-child(even) {
+  padding-right: 10px;
+  text-align: right;
+  padding-left: 0;
+}
+.containerl li:nth-child(even):before {
+  left: auto;
+  right: 0;
 }
 
 /*#flood-right {
